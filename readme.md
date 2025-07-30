@@ -30,7 +30,7 @@ docker build -t nginx-healthcheck .
 
 ```bash
 docker run -d \
-  -v $(pwd)/domains:/etc/nginx/domains \
+  -v $(pwd)/domains:/etc/nginx/domain \
   -p 8080:80 \
   --name nginx-healthcheck \
   nginx-healthcheck
