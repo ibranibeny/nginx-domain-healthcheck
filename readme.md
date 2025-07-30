@@ -16,8 +16,9 @@ This project provides a custom NGINX Docker image that periodically checks HTTP 
 .
 ├── Dockerfile              # Dockerfile to build custom image  
 ├── check-http.sh           # Bash script for health checking  
-├── domains.txt             # Example domain list (to be mounted)  
-└── README.md               # This documentation  
+├── domain/domains.txt             # Example domain list (to be mounted)  
+└── README.md               # This documentation
+
 
 ## Build the Image
 
@@ -29,7 +30,7 @@ docker build -t nginx-healthcheck .
 
 ```bash
 docker run -d \
-  -v $(pwd)/domains.txt:/etc/nginx/domains.txt \
+  -v $(pwd)/domains:/etc/nginx/domains \
   -p 8080:80 \
   --name nginx-healthcheck \
   nginx-healthcheck
