@@ -37,7 +37,7 @@ docker run -d \
 ```
 
 * Access NGINX via: [http://localhost:8080](http://localhost:8080)
-* Domains in `domains.txt` will be checked every 30 seconds
+* Domains in `domains.txt` will be checked every 10 seconds
 
 ## domains.txt Format
 
