@@ -11,5 +11,6 @@ RUN apt-get update && \
 COPY check-http.sh /usr/local/bin/check-http.sh
 RUN chmod +x /usr/local/bin/check-http.sh
 
+RUN mkdir /etc/nginx/domain
 # Start NGINX in background, run loop for check in foreground
 CMD ["sh", "-c", "/usr/sbin/nginx && while true; do /usr/local/bin/check-http.sh; sleep 30; done"]
