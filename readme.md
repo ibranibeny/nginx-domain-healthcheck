@@ -53,10 +53,10 @@ You can mount your own file when starting the container.
 
 ## Environment Variables (Optional)
 
-| Variable     | Description                  | Default                |
-| ------------ | ---------------------------- | ---------------------- |
-| PORT         | Port to check on each domain | 443                    |
-| DOMAIN\_FILE | Path to domain list file     | /etc/nginx/domains.txt |
+| Variable     | Description                  | Default                       |
+| ------------ | ---------------------------- | ----------------------------- |
+| PORT         | Port to check on each domain | 443                           |
+| DOMAIN\_FILE | Path to domain list file     | /etc/nginx/domain/domains.txt |
 
 ## License
 
